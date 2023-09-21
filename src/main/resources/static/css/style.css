@@ -1,0 +1,102 @@
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen detrás del contenido principal */
+    background-image: url('/images/wallpaper5.jpg'); /* Ruta relativa a la carpeta "static" */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Ajusta el valor de opacidad según tu preferencia */
+    /* Pseudo-elemento para aplicar el desenfoque */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px); /* Ajusta el valor de desenfoque según tu preferencia */
+}
+
+
+
+/* Estilo para el contenido principal en el body */
+#contenedor {
+    width: 100%;
+    text-align: center;
+    /* Otros estilos para el contenido aquí */
+}
+
+/* Estilo para el body (opcional) */
+body {
+    margin: 0; /* Elimina el margen predeterminado del body */
+    color: #fff;
+    overflow: visible; 
+}
+#visor-container {
+	width: 734px;
+	height: 413px;
+	margin: 0 auto;
+	border: 2px solid #333;
+	position: relative;
+}
+
+#visor {
+	width: 100%;
+	height: 100%;
+}
+
+#galeria-container {
+	width: 70%; /* Ancho del 70% */
+	margin: 20px auto; /* Margen automático para centrar */
+	text-align: center;
+}
+
+#galeria-title {
+	font-size: 36px;
+	margin-top: 10px;
+}
+
+#galeria {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.imagen-galeria {
+	width: 100px;
+	height: 75px;
+	margin: 5px;
+	border: 1px solid #333;
+	cursor: pointer;
+	transition: transform 0.3s ease; /* Agregar una transición suave para el zoom */
+}
+
+.imagen-galeria:hover {
+	transform: scale(2.5); /* Hacer más grande al pasar el mouse */
+}
+
+.letras-coloridas {
+	background: linear-gradient(to right, #FF5733, #FFBD33, #B6FF33, #33FF77, #338DFF);
+	-webkit-background-clip: text;
+	color: transparent;
+	display: inline-block;
+}
+
+/* Estilo para botones */
+button {
+    background-color: #3498db; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno para que los botones tengan un tamaño adecuado */
+    cursor: pointer; /* Cursor de puntero al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Estilo para botones al pasar el mouse */
+button:hover {
+    background-color: #2980b9; /* Color de fondo azul más oscuro al pasar el mouse */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Webcam con Captura Automática</title>
+   <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+
+</head>
+<body>
+ <div id="nuevo-contenedor">
+  <div id="background-image"></div>
+    <div id="contenedor">
+        <h1 id="logotipo">Flash Photo</h1>
+        <div id="visor-container">
+            <video id="visor" autoplay></video>
+        </div>
+        <br>
+        <button id="capturar">Capturar Imagen</button>
+        <button id="capturarAuto10">Capturar Imagen Auto 10</button>
+        <button id="cambiarCamara">Cambiar Cámara</button>
+
+        <button id="refreshPageButton">Borrar Fotos</button>
+        <div id="galeria-container">
+            <h2 id="galeria-title" class="letras-coloridas">Galería</h2>
+            <div id="galeria"></div>
+        </div>
+    </div>
+    </div>
+    
+<script type="text/javascript" th:src="@{/js/home.js}"></script>
+
+   
+</body>
+</html>
